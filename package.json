@@ -1,0 +1,11 @@
+{
+  "name": "work-france",
+  "version": "1.0.0",
+  "description": "modules",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nikola chakarov",
+  "license": "MIT"
+}
