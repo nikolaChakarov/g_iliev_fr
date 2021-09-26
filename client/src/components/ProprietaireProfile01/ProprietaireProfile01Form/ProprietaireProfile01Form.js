@@ -117,9 +117,18 @@ const ProprietaireProfile01Form = () => {
 
                     <div className={styles.infoSet}>
                         <label htmlFor="iban">RIB/ IBAN bancaire*</label>
-                        <input type="text" id="iban" />
+                        <input type="text" id="iban" placeholder="RIB / IBAN" />
                     </div>
 
+                    <div className={styles.infoSet} style={{ opacity: 0 }}>
+                        <label htmlFor="libelle">Libellé</label>
+                        <input type="text" id="iban" placeholder="Libellé" />
+                    </div>
+
+                    <div className={styles.infoSet}>
+                        <label htmlFor="libelle" style={{ opacity: 0 }}>Libellé</label>
+                        <input type="text" id="iban" placeholder="Libellé" />
+                    </div>
 
 
                 </div>

@@ -22,6 +22,7 @@
 
 .first, .second, .third, .fourth {
     margin-left: 4rem;
+    background-color: lightcyan;
 }
 
 .infoSet, .select {
