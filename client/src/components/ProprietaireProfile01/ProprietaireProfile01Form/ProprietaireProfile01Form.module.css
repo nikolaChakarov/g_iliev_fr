@@ -1,0 +1,92 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+
+.top {
+    background-color: lightcyan;
+    height: 100px;
+}
+
+.middle {
+    background-color:blanchedalmond;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.bottom {
+    background-color: lightcoral;
+    width: 100%;
+    height: 200px;
+}
+
+.first, .second, .third, .fourth {
+    margin-left: 4rem;
+}
+
+.infoSet, .select {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+input {
+    box-shadow: 0px 0.3rem 0.6rem #00000029;
+    border-radius: 2.5rem;
+    border: none;
+    height: 3.3rem;
+    padding: 0.4rem 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+input::placeholder {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+input:focus, select:focus {
+    outline: none;
+}
+
+label {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+select {
+    appearance: none;
+    box-shadow: 0px 0.3rem 0.6rem #00000029;
+    border-radius: 2.5rem;
+    border: none;
+    height: 3.3rem;
+    padding: 0.4rem 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    background-image: url('../../../img/arrow-down.png');
+    background-repeat: no-repeat;
+    background-position: right 2.5rem top 50%;
+}
+
+label[for="contractDeMariage"] {
+    box-shadow: 0px 0.3rem 0.6rem #00000029;
+    border-radius: 2.5rem;
+    border: none;
+    height: 3.3rem;
+    padding: 0.4rem 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    background-color: #fff;
+    background-image: url('../../../img/download.png');
+    background-repeat: no-repeat;
+    background-position: right 2.5rem top 50%;
+    color: rgba(0, 0, 0, .5);
+
+}
+
+

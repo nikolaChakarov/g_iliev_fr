@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './MenuLeftSide.module.css';
 
-import arrow from '../../../img/arrow.svg';
+import arrow from '../../../img/right-arrow.png';
 
 const MenuLeftSide = () => {
 
@@ -13,6 +13,8 @@ const MenuLeftSide = () => {
     const onArrowClickHandler = () => {
         setArrowClick(!arrowClick);
     }
+
+    console.log(arrow);
 
     return (
         <div
