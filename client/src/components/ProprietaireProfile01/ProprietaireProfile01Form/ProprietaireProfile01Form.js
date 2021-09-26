@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './ProprietaireProfile01Form.module.css';
 
-import arrow from '../../../img/down-arrow.svg';
-
 const ProprietaireProfile01Form = () => {
     return (
         <div className={styles.main}>
@@ -78,12 +76,53 @@ const ProprietaireProfile01Form = () => {
 
                     <div className={styles.infoSet}>
                         <input type="file" id="contractDeMariage" hidden />
-                        <label>Télécharger votre contrat de mariage*</label>
+                        <label>Contrat de mariage*</label>
                         <label htmlFor="contractDeMariage">Choisir un fichier</label>
                     </div>
 
                 </div>
 
+                {/*-- THIRD -- --*/}
+                <div className={styles.third}>
+
+                    <div className={styles.infoSet}>
+                        <label htmlFor="email">Email*</label>
+                        <input type="email" id="email" />
+                    </div>
+
+                    <div className={styles.infoSet}>
+                        <input type="file" id="pieceIdentite" hidden />
+                        <label>Pièce d’identité*</label>
+                        <label htmlFor="pieceIdentite">Choisir un fichier</label>
+                    </div>
+
+                    <div className={styles.select}>
+                        <label htmlFor="typeDeVoie" style={{ opacity: 0, margin: 0 }}>Indice de répétition</label>
+                        <select name="typeDeVoie" id="typeDeVoie">
+                            <option value="typeDeVoie">Type de voie</option>
+                            <option value="usa">USA</option>
+                            <option value="england">England</option>
+                        </select>
+                    </div>
+
+                    <div className={styles.infoSet}>
+                        <label htmlFor="codePostale">Code postale</label>
+                        <input type="text" id="codePostale" />
+                    </div>
+
+                </div>
+
+                {/*-- FOURTH -- --*/}
+                <div className={styles.fourth}>
+
+                    <div className={styles.infoSet}>
+                        <label htmlFor="iban">RIB/ IBAN bancaire*</label>
+                        <input type="text" id="iban" />
+                    </div>
+
+
+
+                </div>
 
 
             </div>

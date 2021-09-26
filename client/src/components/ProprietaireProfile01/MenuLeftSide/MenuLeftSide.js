@@ -19,7 +19,10 @@ const MenuLeftSide = () => {
     return (
         <div
             className={styles.main}
-            style={{ width: arrowClick ? '8.25rem' : '26.9rem' }}
+            style={{
+                width: arrowClick ? '8.25rem' : '26.9rem',
+                minWidth: arrowClick ? '8.25rem' : '26.9rem'
+            }}
         >
 
             <div className={styles.arrow}
