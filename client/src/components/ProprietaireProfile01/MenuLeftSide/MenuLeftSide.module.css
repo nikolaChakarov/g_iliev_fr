@@ -4,7 +4,6 @@
     width: 26.9rem;
     box-shadow: 5px 0px 5px #00000029;
     border-radius: 0px 2.5rem 2.5rem 0px;
-    padding-left: 1.35rem;
     position: relative;
     transition: all 0.6s ease-in-out;
 }
@@ -14,6 +13,12 @@ a {
     color: #fff;
     font-size: 1.8rem;
     font-weight: 300;
+}
+
+nav {
+    position: absolute;
+    left: 1.35rem;
+    transition: all 0.6s ease-in-out;
 }
 
 ul li {

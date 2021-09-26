@@ -30,7 +30,12 @@ const MenuLeftSide = () => {
                 />
             </div>
 
-            <nav>
+            <nav
+                style={{
+                    left: arrowClick ? '-300px' : '1.35rem',
+                    opacity: arrowClick ? '0' : '1'
+                }}
+            >
                 <ul>
                     {
                         menuItems.map((el, i) => {
