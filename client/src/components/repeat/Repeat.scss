@@ -1,0 +1,67 @@
+#menu-aside {
+    background-color: lightcoral;
+    height: 100vh;
+    max-width: 10%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    box-shadow: 0 3px 10px rgba($color: #000000, $alpha: 0.3);
+    transition: max-width .5s ease-in-out;
+    margin-right: 1rem;
+    padding: 10rem 2.5rem 0rem;;
+
+
+       /* for all elements in the component */
+       * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .ul-items {
+        list-style: none;
+        background-color: lightgreen;
+        position: absolute;
+        left: 2.5rem;
+        opacity: 1;
+        transition: 
+            left .7s ease-in-out,
+            opacity 1s ease-in-out;
+        li {
+            margin-bottom: 1rem;
+            font-size: calc(12px + (2 * (100vw - 414px) / 952));
+        }
+        & li:last-of-type {
+            background-color: chartreuse;
+            margin-top: 10rem;
+        }
+    }
+
+   
+
+     /* arrow toggle menu */
+     .toggle-menu {
+        width: calc(30px + (20 * (100vw - 414px) / 952));
+        height: calc(30px + (20 * (100vw - 414px) / 952));
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        top: 20%;
+        right: 0;
+        transform: translateX(50%);
+        box-shadow: 0 3px 10px rgba($color: #000000, $alpha: 0.3);
+        cursor: pointer;
+
+        .img-custom {
+            transition: all .5s ease-in-out;
+        }
+    }
+    
+    @media screen and (max-width: 576px) {
+        transition: position 2s ease-in-out;
+        
+        .ul-items {
+            transition: none;
+        }
+    }
+}

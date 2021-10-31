@@ -1,12 +1,14 @@
 :root {
     --purple: #8811F9;
+    --typo-lg45-sm25: calc(25rem + (20 * (100vw - 375px) / 1545));
+    --typo-lg25-sm12: calc(12rem + (12 * (100vw - 375px) / 1545));
+
+    --space-lg5-sm2_5: calc(2.5rem + (2.5 * (100vw - 375px) / 1545));
+    --space-lg5-sm3: calc(3rem + (2 * (100vw - 375px) / 1545));
+    --space-lg10-sm3: calc(3rem + (7 * (100vw - 375px) / 1545));
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 html {
     font-size: 62.5%;
@@ -15,4 +17,10 @@ html {
 body {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+}
+
+#wrapper {
+    background-color: lightcyan;
+    padding: 0;
+    margin: 0;
 }

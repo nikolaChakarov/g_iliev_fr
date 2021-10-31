@@ -1,12 +1,20 @@
-import ProprietaireProfile01 from './components/ProprietaireProfile01/ProprietaireProfile01';
-
 import './App.css';
+import Repeat from './components/repeat/Repeat';
+
+// import MenuAside from './components/Bootstrap/MenuAside/MenuAside';
 
 const App = () => {
+
     return (
-        <>
-            <ProprietaireProfile01 />
-        </>
+        <div className="container-fluid d-flex" id="wrapper">
+
+            <Repeat />
+            <div className="row">
+                <div className="col">
+                    <h1>Test</h1>
+                </div>
+            </div>
+        </div>
     )
 };
 
