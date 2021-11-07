@@ -14,7 +14,7 @@ const Repeat = () => {
     }
 
     return (
-        <div className="container-fluid" id="menu-aside" style={{
+        <div className="container-fluid" id="menu-app-aside" style={{
             maxWidth: !click ? '' : width > 576 ? '25%' : '80%',
             position: (click && width <= 576) ? 'absolute' : ''
         }}>

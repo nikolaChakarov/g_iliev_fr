@@ -1,7 +1,8 @@
 :root {
     --purple: #8811F9;
-    --typo-lg45-sm25: calc(25rem + (20 * (100vw - 375px) / 1545));
-    --typo-lg25-sm12: calc(12rem + (12 * (100vw - 375px) / 1545));
+    --typo-lg45-sm25: calc(2.5rem + (20 * (100vw - 375px) / 1545));
+    --typo-lg25-sm12: calc(1.2rem + (12 * (100vw - 375px) / 1545));
+    --typo-lg18-sm14: calc(1.4rem + (4 * (100vw - 375px) / 1545));
 
     --space-lg5-sm2_5: calc(2.5rem + (2.5 * (100vw - 375px) / 1545));
     --space-lg5-sm3: calc(3rem + (2 * (100vw - 375px) / 1545));

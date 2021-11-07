@@ -1,4 +1,4 @@
-#menu-aside {
+#menu-app-aside {
     background-color: lightcoral;
     height: 100vh;
     max-width: 10%;
@@ -7,7 +7,7 @@
     position: relative;
     box-shadow: 0 3px 10px rgba($color: #000000, $alpha: 0.3);
     transition: max-width .5s ease-in-out;
-    margin-right: 1rem;
+    margin-right: 3rem;
     padding: 10rem 2.5rem 0rem;;
 
 
@@ -58,6 +58,7 @@
     }
     
     @media screen and (max-width: 576px) {
+        display: none;
         transition: position 2s ease-in-out;
         
         .ul-items {
