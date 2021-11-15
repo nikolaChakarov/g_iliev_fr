@@ -1,0 +1,42 @@
+#wrapper-box {
+    background-color: red;
+    flex-grow: 1;
+    height: 1rem;
+    display: flex;
+}
+
+.one {
+    background-color: orchid;
+}
+
+.two {
+    background-color: palegreen;
+    flex-grow: 1;
+    
+    display: flex;
+    flex-direction: column;
+
+}
+.chat {
+    background-color: maroon;
+    margin-top: auto;
+}
+
+.inner {
+    background-color: lightsteelblue;
+    overflow-y: scroll;
+    height: 50rem;
+
+}
+
+@media (max-width: 576px) {
+    #wrapper-box {
+        flex-direction: column;
+    }
+
+    .inner {
+        flex-grow: 1;
+        height: 1rem;
+    }
+   
+}

@@ -10,14 +10,16 @@ const Repeat = () => {
     const width = useWidth();
 
     const onArrowClickHandler = (e) => {
-        setClick(!click);
+        e.stopPropagation();
+
+        return e.target.tagName == 'A' ? null : setClick(!click);
     }
 
     return (
         <div className="container-fluid" id="menu-app-aside" style={{
             maxWidth: !click ? '' : width > 576 ? '25%' : '80%',
-            position: (click && width <= 576) ? 'absolute' : ''
-        }}>
+            height: !click ? '' : width > 576 ? '' : '80%',
+        }} onClick={onArrowClickHandler}>
             <div className="row">
                 <div className="col">
                     <ul className="ul-items" style={{
@@ -26,7 +28,7 @@ const Repeat = () => {
                     }}>
                         {menuItems.map((el, i) => {
                             return (
-                                <li key={i}>{el}</li>
+                                <li key={i}><a href="#">{el}</a></li>
                             )
                         })}
                     </ul>

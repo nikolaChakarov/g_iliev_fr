@@ -1,0 +1,53 @@
+#order-row-col-wrapper {
+    background-color: maroon;
+    height: 40rem;
+    margin: auto 0;
+    display: flex;
+    
+    
+    .row {
+        background-color: mediumaquamarine;
+        flex-grow: 1;
+        display: flex;
+    }
+    
+    .images {
+        background-color: mediumorchid;
+        display: flex;
+        flex-direction: column;
+        
+        img {
+            width: 2rem
+        }
+    }
+    
+    .content {
+        background-color: midnightblue;
+        color: #fff;
+        overflow-y: scroll;
+        height: 100%;
+    }
+
+}
+
+@media screen and(max-width: 576px) {
+    #order-row-col-wrapper {
+        flex-grow: 1;
+        
+        .row {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .content {
+            flex-grow: 1;
+        }
+        
+        .images {
+            flex-grow: 0;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: .8rem;
+        }
+    }
+}

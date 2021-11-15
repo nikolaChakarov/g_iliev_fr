@@ -1,0 +1,13 @@
+#app-header {
+    background-color: lightseagreen;
+    h1 { 
+        margin: 0;
+    }
+}
+
+@media screen and(max-width: 576px) {
+    #app-header {
+        padding-left: 13%;
+        min-height: 10rem;
+    }
+}

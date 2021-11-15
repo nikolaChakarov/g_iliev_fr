@@ -57,12 +57,16 @@
         }
     }
     
-    @media screen and (max-width: 576px) {
-        display: none;
-        transition: position 2s ease-in-out;
-        
-        .ul-items {
-            transition: none;
+}
+@media screen and (max-width: 576px) {
+    #menu-app-aside {
+        position: absolute;
+        height: 10rem;
+        border-bottom-right-radius: 1rem;
+        transition: all 1s ease-in-out;
+
+        .toggle-menu {
+            display: none;
         }
     }
 }

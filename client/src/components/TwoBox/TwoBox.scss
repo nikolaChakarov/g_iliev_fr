@@ -1,0 +1,43 @@
+.wrapper-two-box {
+    background-color: lightsteelblue;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.one {
+    background-color: limegreen;
+}
+
+.two {
+    background-color: lightslategray;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner {
+    overflow-y: scroll;
+    background-color: magenta;
+    height: 1rem;
+    flex-grow: 1;
+}
+
+@media (max-width: 576px) {
+    .wrapper-two-box {
+        flex-grow: 1;
+    }
+
+    .one {
+        margin-top: auto;
+    }
+
+    .two {
+        flex-grow: 1;
+    }
+
+    .inner {
+        flex-grow: 1;
+    }
+}

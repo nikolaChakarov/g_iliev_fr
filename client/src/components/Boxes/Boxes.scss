@@ -1,0 +1,29 @@
+#boxes-wrapper {
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+
+
+
+    .b-header {
+        background-color: cornflowerblue;
+        margin-top: auto;
+    }
+
+    .b-body {
+        background-color: crimson;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 576px) {
+    #boxes-wrapper {
+        flex-grow: 1;
+
+        .b-body {
+            background-color: cyan;
+            flex-grow: 1;
+        }
+    }
+}
