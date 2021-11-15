@@ -12,6 +12,8 @@
 .two {
     background-color: palegreen;
     flex-grow: 1;
+    height: 50rem;
+    overflow-y: scroll;
     
     display: flex;
     flex-direction: column;
@@ -24,8 +26,6 @@
 
 .inner {
     background-color: lightsteelblue;
-    overflow-y: scroll;
-    height: 50rem;
 
 }
 
@@ -34,7 +34,7 @@
         flex-direction: column;
     }
 
-    .inner {
+    .two {
         flex-grow: 1;
         height: 1rem;
     }
