@@ -3,8 +3,10 @@ import Header from './components/Header/Header';
 // import Order from './components/Order/Order';
 // import OrderRowCol from './components/OrderRowCol/OrderRowCol';
 // import Boxes from './components/Boxes/Boxes';
-import Boxes from './components/Boxes-NOT/Boxes-not';
+// import Boxes from './components/Boxes-NOT/Boxes-not';
 // import TwoBox from './components/TwoBox/TwoBox';
+
+import Boxes03 from './components/Boxes03/Boxes03';
 
 import './App.css';
 
@@ -17,7 +19,8 @@ const App = () => {
 
             <div className="wrapper-body d-flex">
                 <Header />
-                <Boxes />
+                <Boxes03 />
+                {/* <Boxes /> */}
                 {/* <TwoBox /> */}
 
             </div>

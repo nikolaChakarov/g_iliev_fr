@@ -1,7 +1,6 @@
 #wrapper-box {
     background-color: red;
     flex-grow: 1;
-    height: 1rem;
     display: flex;
 }
 
@@ -25,7 +24,6 @@
 }
 
 .inner {
-    background-color: lightsteelblue;
 
 }
 
@@ -35,6 +33,7 @@
     }
 
     .two {
+        background-color: chocolate;
         flex-grow: 1;
         height: 1rem;
     }
